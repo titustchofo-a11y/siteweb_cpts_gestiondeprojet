@@ -4,6 +4,7 @@ if (!isset($_SESSION['favoris'])) {
     $_SESSION['favoris'] = [];
 }
 
+
 $id = isset($_GET['professional_id']) ? (int)$_GET['professional_id'] : 0;
 if ($id <= 0) {
     http_response_code(400);
